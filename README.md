@@ -499,7 +499,7 @@ show_confusion_matrix(conf_matrix,hebrew_letters_alph)
     1/1 [==============================] - 0s 199ms/step
     1/1 [==============================] - 0s 113ms/step
 
-![](9fcf4d740f4b12bd65191a389c2eab26dd87dfab.png)
+![](image.png)
 
 # Discussion
 
