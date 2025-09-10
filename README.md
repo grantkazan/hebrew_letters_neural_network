@@ -313,7 +313,7 @@ consistent with multiclass classification.
 X = new_size # all images are 64 X 64
 
 cnn_layers = [Input(shape=(X, X, 3)),
-  Conv2D(X/2, (3, 3), activation='relu'),
+  Conv2D(X//2, (3, 3), activation='relu'),
   MaxPool2D((2,2)),
   Conv2D(X, (3, 3), activation='relu'),
   MaxPool2D((2,2)),
@@ -448,7 +448,7 @@ ha = f"Actual - {heb_act[::-1]}"
 def show_confusion_matrix(cm, labels):
   plt.figure(figsize=(14, 10))
   ax = sns.heatmap(cm, xticklabels=labels, yticklabels=labels, 
-              annot=True, fmt='g',cmap='Blues',linewidths=1,linecolor='Black')
+              annot=True, fmt='g',cmap='BuPu',linewidths=1,linecolor='Black')
   
   ax.xaxis.set_ticks_position('top') 
   plt.xticks(rotation=45)  # Rotate x ticks for better readability (optional)
